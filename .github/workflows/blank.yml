@@ -1,0 +1,12 @@
+name: first-action
+on: worflow
+jobs: 
+  roy:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: action/checkout@v4
+      - uses: actions/setup-node@v3
+        with: 
+          node-versions: '14'
+      - run: npm help
+      - run: echo 'roy you are the best'
