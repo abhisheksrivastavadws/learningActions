@@ -1,8 +1,8 @@
 name: roy
 on: workflow
-  jobs: 
-    royJobs:
-    runs-on: ubuntu-latest
-    steps:
-      - name: action1
-        run: echo "hey roy"
+jobs: 
+  royJobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: action1
+      run: echo "hey roy"
