@@ -1,5 +1,5 @@
 name: first-action
-on: worflow
+on: workflow
 jobs: 
   roy:
     runs-on: ubuntu-latest
