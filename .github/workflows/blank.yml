@@ -1,5 +1,9 @@
 name: first-action
-on: workflow
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs: 
   roy:
     runs-on: ubuntu-latest
