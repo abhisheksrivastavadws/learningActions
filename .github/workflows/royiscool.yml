@@ -1,0 +1,8 @@
+name: roy
+on: workflow_dispatch
+jobs:
+  firstJobs:  
+    runs-on: ubuntu-latest
+    steps:
+      - name: roy
+        run: echo "hey "
