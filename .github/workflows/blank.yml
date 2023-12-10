@@ -1,16 +1,9 @@
-name: first-action
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-jobs: 
-  roy:
-    runs-on: ubuntu-latest
-    steps: 
-      - uses: action/checkout@v4
-      - uses: actions/setup-node@v3
-        with: 
-          node-versions: '14'
-      - run: npm help
-      - run: echo 'roy you are the best'
+name: roy
+on: workflow
+runs-on:
+  jobs: 
+    royJobs:
+      runs-on: ubuntu-latest
+      steps:
+        - name: action1
+          run: echo "hey roy"
